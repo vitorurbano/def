@@ -60,39 +60,59 @@ nav hr {
 }
 
 div#banner{
-	margin: 0px;
-	height: 700px;
-	display: inline-block;
-	width: 100%;
-	vertical-align: initial;
-
+    height: 700px;
+    display: flex;
+    width: 100%;
+    margin: 3% 5% 0% 5%;
 }
 
 div#bn-img img{
-	width: 75%;
-	margin: 0px;
-	position: absolute;
-	z-index: -1;
+    width: 120%;
+    margin: 0px;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    z-index: -1;
+
 }
 
 div#bn-form{
-    background-color: white;
+    width: 405px;
+    height: 729px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 1px solid #1a7fbd;
+    background: #FFF;
+    margin: 0 8%;
+
+    /* background-color: white;
     width: 400px;
     margin: 54px 0px 0px 948px;
     text-align: left;
     z-index: 1;
     position: absolute;
     padding: 19px 30px 70px 30px;
-    border-radius: 10px;
+    border-radius: 10px; */
 }
 /*---------------------------------------------------------------------------------*/
 
+div#bn-form-inputs{
+    width: 356px;
+    height: 173px;
+    flex-shrink: 0; 
+    padding: 0 5% 5% 5%;
+}
 
 /*Formulário*/
 
 h2#form-title{
-	color: #cecece;
-	font-family: 'Noto Sans', sans-serif;
+	color: #CECECE;
+    font-family: Noto Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0 5% 0 5%;
 	
 }
 
@@ -112,7 +132,7 @@ p#form-textocampos{
 input.empty {
     font-family: FontAwesome;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 500;
     text-decoration: inherit;
     font-size: 11px;
     padding: 10px;
@@ -124,20 +144,35 @@ input.empty {
     stroke: #cecece;
     border-color: #cecece;
     border-width: thin;
+    color: #A0A0A0;
+    line-height: normal;
 }
 
 #form-interna{
-	background-color: #1A7FBD;
-    margin-top: 10px;
-    padding: 12px;
-    margin-left: -31px;
-    margin-right: -31px;
-    color: white;
+	width: 405px;
+    height: 170px;
+    flex-shrink: 0;
+    background: #1A7FBD;
+    color: #FFF;
+    font-family: Noto Sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 3% 1% 3% 4%;
+
+
 }
 
 #form-interna2{
-	padding-top: 10px;
-	padding-bottom:10px ;
+    padding: 8% 0% 2% 5%;
+    color: #A0A0A0;
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
 }
 
 #form-interna2 legend{
@@ -153,18 +188,19 @@ p#form-disclaimer{
 }
 
 input[type='button']{
-	margin-top: 20px;
-	margin-left: auto;
-    margin-right: auto; 
 	background-color: #1A7FBD;
-	color: white;
-	width: 400px;
-	height: 50px;
-	font-family: 'Noto Sans', sans-serif;
-	font-weight: bold;
-	border: 0px;
-	border-radius: 5px;
-	text-align: center;
+    color: white;
+    width: 90%;
+    height: 50px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    border: 0px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+    margin: 0px 25px;
 
 }
 
@@ -173,9 +209,10 @@ input.checkbox {
 }
 
 input[type='checkbox'] {
-      position: relative;
-      cursor: pointer;
-      margin: 10px;
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+  
  }
  input[type='checkbox']:before {
       content: '';
@@ -245,6 +282,14 @@ h1#proj-title {
 	color: #A4DCFF;
 }
 
+hr#hr-form{
+    width: 356px;
+    height: 1px;
+    background: #CECECE;
+    border: 1px;
+
+}
+
 /*---------------------------------------------------------------------------------*/
 
 /*Sessao Problema*/
@@ -276,27 +321,12 @@ div#probl-text{
 div#sessao-problema-box{
 	background-color: white;
     height: 500px;
-    display: inline-block;
+    display: flex;
     width: 100%;
+    flex-direction: row;
 }
 
 div#problema-box{
-	position: absolute;
-    background-color: white;
-    border: 1px;
-    border-color: black;
-    width: 327px;
-    height: 228px;
-    padding: 20px 40px 20px 40px;
-    text-align: center;
-    border-radius: 12px;
-    margin: 0px 101px;
-    box-shadow: 2px 2px 50px #88888859;
-
-}
-
-div#problema-box2{
-	position: absolute;
     background-color: white;
     border: 1px;
     border-color: black;
@@ -306,22 +336,7 @@ div#problema-box2{
     text-align: center;
     border-radius: 12px;
     box-shadow: 2px 2px 50px #88888859;
-    margin: 0px 526px 0px;
 
-
-}
-div#problema-box3{
-	position: absolute;
-    background-color: white;
-    border: 1px;
-    border-color: black;
-    width: 327px;
-    height: 228px;
-    padding: 20px 40px 20px 40px;
-    text-align: center;
-    border-radius: 12px;
-    box-shadow: 2px 2px 50px #88888859;
-    margin: 0 951px 0;
 }
 
 
@@ -342,12 +357,13 @@ div#sessao-jornada{
 }
 
 div#sessao-jornada{
-    display: inline-block;
+    display: flex;
     justify-content: center;
     width: 100%;
     
 }
 
 div#sessao-jornada h1 img{
+    display: flex;
     justify-content: center;
 }
