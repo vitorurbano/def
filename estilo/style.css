@@ -189,8 +189,9 @@ input.empty {
 
 p#form-disclaimer{
 	color: #9A9A9A;
-	font-size: 12px;
+    font-size: 10px;
     text-align: center;
+    padding: 0px 60px;
 }
 
 input[type='button']{
@@ -490,7 +491,7 @@ div#objetivos-row{
 
 div#box-2{
     margin: 20px 5px;
-    padding-top: 30px;
+    padding: 30px 15px 0px 15px;
     width: 327px;
     height: 228px;
     flex-shrink: 0;
