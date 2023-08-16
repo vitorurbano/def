@@ -278,9 +278,6 @@ div#sessao-problema-box{
     height: 500px;
     display: inline-block;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    align-content: center;
 }
 
 div#problema-box{
@@ -324,13 +321,32 @@ div#problema-box3{
     text-align: center;
     border-radius: 12px;
     box-shadow: 2px 2px 50px #88888859;
-    margin: 0 951px;
+    margin: 0 951px 0;
 }
 
-}
+
 
 h1#pobl-titulo{
 	background: -webkit-linear-gradient(#1A7FBD, #A4DCFF);
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
+}
+
+div#sessao-jornada{
+    background-color: white;
+    height: 500px;
+    color: #1A7FBD;
+    margin-top: -5px;
+    
+
+}
+
+div#sessao-jornada{
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+}
+
+div#sessao-jornada h1 img{
+    justify-content: center;
 }
